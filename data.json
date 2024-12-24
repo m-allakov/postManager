@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "username": "ali",
+            "password": "123"
+        }
+    ],
+    "posts": [
+        {
+            "title": "ascac",
+            "description": "ascscasc",
+            "date": "2024-12-24",
+            "platform": "instagram"
+        },
+        {
+            "title": "ascasc",
+            "description": "ascasc",
+            "date": "2024-12-25",
+            "platform": "x"
+        }
+    ]
+}

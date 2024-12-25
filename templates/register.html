@@ -6,20 +6,40 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Hesap Oluştur</title>
 </head>
-<body>
-    <div class="container">
-        <h2 class="mt-5">Hesap Oluştur</h2>
-        <form method="post">
-            <div class="form-group">
-                <label for="username">Kullanıcı Adı:</label>
-                <input type="text" class="form-control" id="username" name="username" required>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="text-center mb-4">
+                    <a href="/" class="text-dark text-decoration-none">
+                        <h2>Post Planlama</h2>
+                    </a>
+                </div>
+                <div class="card shadow-sm">
+                    <div class="card-body p-5">
+                        <h3 class="text-center mb-4">Hesap Oluştur</h3>
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="username">Kullanıcı Adı:</label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Şifre:</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-dark btn-block">Kaydol</button>
+                        </form>
+                        <div class="text-center mt-3">
+                            <a href="/login" class="text-muted">Zaten hesabınız var mı? Giriş yapın</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="password">Şifre:</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Kaydol</button>
-        </form>
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html> 

@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template, redirect, url_for
+from flask import Flask, request, jsonify, render_template, redirect, url_for, flash
 import json
 
 app = Flask(__name__)
@@ -81,6 +81,23 @@ def dashboard():
 @app.route('/logout')
 def logout():
     return redirect(url_for('home'))
+
+# Profil sayfası
+@app.route('/profile', methods=['GET', 'POST'])
+def profile():
+    if request.method == 'POST':
+        # Kullanıcı bilgilerini güncelle
+        # Örnek: kullanıcı adı ve e-posta güncelleme
+        username = request.form.get('username')
+        email = request.form.get('email')
+        # Burada güncelleme işlemlerini yapabilirsiniz
+        flash('Profil güncellendi!', 'success')
+    # Kullanıcı bilgilerini al
+    user_info = {
+        'username': 'mevcut_kullanici_adi',
+        'email': 'mevcut_email@example.com'
+    }
+    return render_template('profile.html', user_info=user_info)
 
 if __name__ == '__main__':
     app.run(debug=True) 

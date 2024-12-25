@@ -4,22 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/style.css" rel="stylesheet">
     <title>Giriş Yap</title>
 </head>
-<body>
-    <div class="container">
-        <h2 class="mt-5">Giriş Yap</h2>
-        <form method="post">
-            <div class="form-group">
-                <label for="username">Kullanıcı Adı:</label>
-                <input type="text" class="form-control" id="username" name="username" required>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="text-center mb-4">
+                    <a href="/" class="text-dark text-decoration-none">
+                        <h2>Post Planlama</h2>
+                    </a>
+                </div>
+                <div class="card shadow-sm">
+                    <div class="card-body p-5">
+                        <h3 class="text-center mb-4">Giriş Yap</h3>
+                        <form method="post">
+                            <div class="form-group">
+                                <label for="username">Kullanıcı Adı:</label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Şifre:</label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-dark btn-block">Giriş Yap</button>
+                        </form>
+                        <div class="text-center mt-3">
+                            <a href="/register" class="text-muted">Hesabınız yok mu? Kayıt olun</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="password">Şifre:</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Giriş Yap</button>
-        </form>
+        </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html> 
